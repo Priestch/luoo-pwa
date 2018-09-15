@@ -1,6 +1,6 @@
 <template>
   <section class="volume-list">
-    <volume
+    <volume-card
       v-for="volume in volumes"
       :key="volume.id"
       :volume="volume" />
@@ -8,10 +8,11 @@
 </template>
 
 <script>
-import Volume from './Volume';
+import VolumeCard from './VolumeCard';
+
 export default {
   name: 'VolumeList',
-  components: { Volume },
+  components: { VolumeCard },
   props: {
     volumes: {
       type: Array,
