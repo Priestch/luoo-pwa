@@ -2,5 +2,10 @@
 
 $link: $link-color;
 $link-hover: $link-hover-color;
+$link-focus: $link-hover-color;
+$link-active: $link-hover-color;
 
-@import '~bulma/bulma.sass';
+$pagination-hover-color: #363636;
+
+@import '~bulma';
+@import "~buefy/src/scss/buefy";

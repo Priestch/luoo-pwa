@@ -1,3 +1,5 @@
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+
 module.exports = {
   devServer: {
     proxy: {
@@ -12,6 +14,9 @@ module.exports = {
         data: `@import "@/assets/variables.scss";`,
       },
     },
+  },
+  configureWebpack: {
+    plugins: [new LodashModuleReplacementPlugin()],
   },
   pluginOptions: {
     lintStyleOnBuild: true,

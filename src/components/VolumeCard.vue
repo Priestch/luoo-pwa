@@ -14,7 +14,7 @@
       <router-link
         :to="getVolumeRouter(volume)"
         class="card-footer-item volume-name">
-        vol.{{ volume.vol_number }} {{ volume.name }}
+        vol.{{ volume.volNumber }} {{ volume.name }}
       </router-link>
       <!--<span class="card-footer-item volume-data"></span>-->
     </footer>
@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getVolumeRouter(volume) {
-      return { name: 'volume', params: { volumeId: volume.id } };
+      return { name: 'volume', params: { volumeId: `${volume.id}` } };
     },
   },
 };

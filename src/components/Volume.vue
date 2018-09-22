@@ -6,7 +6,7 @@
 
     <section class="volume-cover">
       <router-link :to="getVolumeRouter(volume)">
-        <figure>
+        <figure class="image">
           <img
             :src="volume.cover"
             :alt="volume.name">
@@ -49,9 +49,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.volume-cover {
-  figure {
-    margin: 0;
-  }
+.volume {
+  width: $volume-large-cover-width;
 }
 </style>
