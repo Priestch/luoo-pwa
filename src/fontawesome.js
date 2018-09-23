@@ -1,7 +1,9 @@
-const fontawesome = require('@fortawesome/fontawesome');
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
 
-const faAngleRight = require('@fortawesome/fontawesome-free-solid/faAngleRight');
-const faAngleLeft = require('@fortawesome/fontawesome-free-solid/faAngleLeft');
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
-fontawesome.library.add(faAngleRight);
-fontawesome.library.add(faAngleLeft);
+library.add(faAngleRight);
+library.add(faAngleLeft);
+
+dom.watch();
