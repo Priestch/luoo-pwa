@@ -1,7 +1,8 @@
 <template>
   <article class="volume">
     <header>
-      <h3>{{ volume.name }}</h3>
+      <span class="volume-number">{{ volume.vol_number }}</span>
+      <span>{{ volume.name }}</span>
     </header>
 
     <section class="volume-cover">
@@ -51,5 +52,32 @@ export default {
 <style scoped lang="scss">
 .volume {
   width: $volume-large-cover-width;
+
+  header {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 63px;
+
+    .volume-number {
+      display: inline-block;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      margin-right: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+
+  .volume-description {
+    font-size: 14px;
+  }
+
+  .volume-cover {
+    margin-bottom: 22px;
+  }
 }
 </style>
