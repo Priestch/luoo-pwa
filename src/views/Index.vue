@@ -83,7 +83,7 @@ export default {
   .volume-list {
     margin-top: 40px;
 
-    ::-v-deep .card {
+    ::v-deep .card {
       margin-bottom: 30px;
     }
   }
