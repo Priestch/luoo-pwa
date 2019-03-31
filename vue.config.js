@@ -1,6 +1,7 @@
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
+  publicPath: 'static',
   devServer: {
     proxy: {
       '/api': {
@@ -12,6 +13,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         data: `@import "@/assets/variables.scss";`,
+        implementation: require('sass'),
       },
     },
   },
