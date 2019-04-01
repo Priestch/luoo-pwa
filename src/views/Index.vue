@@ -1,15 +1,16 @@
 <template>
   <section class="page">
-    <tag-list :tags="tags" />
+    <tag-list :tags="tags"></tag-list>
 
-    <volume-list :volumes="volumes" />
+    <volume-list :volumes="volumes"></volume-list>
 
     <b-pagination
       :total="pager.total"
       :current.sync="pager.page"
       :rounded="true"
       :per-page="pager.perPage"
-      order="is-centered" />
+      order="is-centered">
+    </b-pagination>
   </section>
 </template>
 

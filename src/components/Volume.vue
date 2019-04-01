@@ -23,7 +23,7 @@
       </p>
     </section>
 
-    <section class="volume-author" />
+    <section class="volume-author"></section>
   </article>
 </template>
 

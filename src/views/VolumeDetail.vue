@@ -2,7 +2,7 @@
   <div>
     <volume
       v-if="volume"
-      :volume="volume" />
+      :volume="volume"></volume>
   </div>
 </template>
 

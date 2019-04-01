@@ -3,7 +3,7 @@
     <volume-card
       v-for="volume in volumes"
       :key="volume.id"
-      :volume="volume" />
+      :volume="volume"></volume-card>
   </section>
 </template>
 
